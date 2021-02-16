@@ -1,6 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <tab name="init" type="InitTab" active="false" scrollx="981.5" scrolly="500.5" scale="0.9"></tab>
-  <tab name="main" type="MainTab" active="true" scrollx="888.1666259765625" scrolly="511.61109924316406" scale="0.9">
+  <tab name="main" type="MainTab" active="true" scrollx="939.2777709960938" scrolly="517.1666412353516" scale="0.9">
     <block xmlns="https://developers.google.com/blockly/xml" type="setTimeout" id="@Q*|FJ?MBzMUGX])K6e)" x="-870" y="-470">
       <value name="VALUE">
         <shadow type="math_number" id="U^gSYlwX2E.S%{`kYKxz">
@@ -25,8 +25,11 @@
               <field name="RIGHT_BUTTON">TRUE</field>
               <value name="VALUE">
                 <shadow type="objectList" id="w=NDLp%Q?M4%nEhG;xb|">
-                  <field name="FIELDNAME">a</field>
+                  <field name="FIELDNAME">&lt;none&gt;</field>
                 </shadow>
+                <block type="text" id="C6D(Un3lfZ=.%gn~s7I9">
+                  <field name="TEXT">a</field>
+                </block>
               </value>
               <statement name="DO">
                 <block type="loadScene" id="S/UD[mId/_ua,JA~8,8L">
@@ -46,8 +49,11 @@
                       <field name="RIGHT_BUTTON">TRUE</field>
                       <value name="VALUE">
                         <shadow type="objectList" id="|nj8bs{#;CfCBP@FnSdk">
-                          <field name="FIELDNAME">Plane.001</field>
+                          <field name="FIELDNAME">&lt;none&gt;</field>
                         </shadow>
+                        <block type="text" id="BLhJgfGx+M-{DjaChQVQ">
+                          <field name="TEXT">Plane.003</field>
+                        </block>
                       </value>
                     </block>
                   </statement>

@@ -33,7 +33,7 @@
                   <mutation xmlns="http://www.w3.org/1999/xhtml" enableonprogress="false" enablealias="false"></mutation>
                   <value name="URL">
                     <shadow type="text" id="t+!w5-=yaq4nG2`M5VLk">
-                      <field name="TEXT">./assets/scene2.gltf</field>
+                      <field name="TEXT">./assets/scene3.gltf</field>
                     </shadow>
                   </value>
                   <statement name="DO">
