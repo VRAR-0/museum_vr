@@ -18,6 +18,19 @@
         </block>
       </statement>
     </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="JKCMW[n^%g?xwO|M[23f" x="-870" y="-230">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="P3k|_}BA~Go]K!WIa]x;">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+      </value>
+    </block>
   </tab>
   <editorsettings viewport-x="1261.8" viewport-y="28" viewport-w="853.2" viewport-h="538" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
 </xml>
