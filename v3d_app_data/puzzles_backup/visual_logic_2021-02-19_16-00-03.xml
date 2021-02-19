@@ -1,0 +1,195 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="687.245721318196" scrolly="638.5040938472157" scale="0.5525219281866839"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="641.6257933441666" scrolly="912.6066542238987" scale="1">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="@XO}6%BiL|}ZO082GT,?" type="">scenes</variable>
+      <variable id="l.4;vLi;@vMk+mxL?HQt" type="">sceneName</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="rCfv:O~c,b;9]wW+#o@q" x="-590" y="-750">
+      <field name="VAR" id="@XO}6%BiL|}ZO082GT,?">scenes</field>
+      <value name="VALUE">
+        <block type="dictCreateEmpty" id="yGcy_~6dOFnrPSG+Lh!7"/>
+      </value>
+      <next>
+        <block type="dictSet" id="eBoedqNlj99P|QOjj.`/">
+          <value name="DICT">
+            <block type="variables_get" id="rTo3FtSIiS.-/u)C%[N1">
+              <field name="VAR" id="@XO}6%BiL|}ZO082GT,?">scenes</field>
+            </block>
+          </value>
+          <value name="KEY">
+            <shadow type="text" id="ES;bNXJ(B2XC*fv69].*">
+              <field name="TEXT">scene1</field>
+            </shadow>
+          </value>
+          <value name="VALUE">
+            <block type="lists_create_with" id="x1bw?xqmq@9#=}todtYB">
+              <mutation items="2"/>
+              <value name="ADD0">
+                <block type="text" id="~:U%6ES1i`Nrf}XZ2/}@">
+                  <field name="TEXT">scene2</field>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="text" id="Q$E_)a!VXJY8g[n!z%8J">
+                  <field name="TEXT">scene6</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="procedures_callnoreturn" id=";M)Nuw_k,J1r_9Okh%W]">
+              <mutation name="loadScene">
+                <arg name="sceneName"/>
+              </mutation>
+              <value name="ARG0">
+                <block type="text" id="*:!ge!cV1av,;3mfe;qU">
+                  <field name="TEXT">scene1</field>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="qEF^}lBBPo]Z4]g`LdKe" x="-590" y="-550">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="U%aihHgd6{s!m),m)5;I">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+        <block type="dictGet" id="F7[$jI)hG9LBJ(lc7aP6">
+          <value name="DICT">
+            <block type="variables_get" id="o!{*.e9pmJO(0gj^J=*x">
+              <field name="VAR" id="@XO}6%BiL|}ZO082GT,?">scenes</field>
+            </block>
+          </value>
+          <value name="KEY">
+            <shadow type="text" id="gQusGqvDn6u=Zyh%SrQ2">
+              <field name="TEXT">scene1</field>
+            </shadow>
+          </value>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="console.log" id="F2P6rR#48zU(Tl!qTFK|">
+          <value name="VALUE">
+            <shadow type="text" id="p,S644ey9C[jk^,$29ve">
+              <field name="TEXT">Hello, Verge!</field>
+            </shadow>
+            <block type="pickedObject" id="Nc9#K-xxI0C_)ym^sJ(2"/>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <tab name="functions" type="SecondaryTab" active="false" scrollx="0.0000785772117524175" scrolly="0.0000824292432639595" scale="0.9000000000000007">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="l.4;vLi;@vMk+mxL?HQt" type="">sceneName</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="bo/15+Z.!R(ImB5Inh8[" x="10" y="130">
+      <mutation>
+        <arg name="sceneName" varid="l.4;vLi;@vMk+mxL?HQt"/>
+      </mutation>
+      <field name="NAME">loadScene</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="setHTMLElemStyle" id="I(z|fr-yW,1|Zj)NMK,=">
+          <field name="PROPERTY">display</field>
+          <field name="PARENT">FALSE</field>
+          <value name="VALUE">
+            <block type="text" id="*K(PknoVZME=w6d2Q9AN">
+              <field name="TEXT">flex</field>
+            </block>
+          </value>
+          <value name="ID">
+            <shadow type="text" id="FLx1_Q2$kdT^+!!iC~MW">
+              <field name="TEXT">preloader</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="appendScene" id="qC7s?N5judf]x:Ky=WTj">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" enableonprogress="true" enableonerror="false" loadcameras="true" loadlights="true" enablealias="false"></mutation>
+              <value name="URL">
+                <shadow type="text" id="@M7o*)uD|W}hykM!`P@R">
+                  <field name="TEXT">./assets/scene1.gltf</field>
+                </shadow>
+                <block type="procedures_callreturn" id="RpoJm37@s5#!u@C7{loc">
+                  <mutation name="getFileName">
+                    <arg name="sceneName"/>
+                  </mutation>
+                  <value name="ARG0">
+                    <block type="variables_get" id="b+mln.H~|11XmoW@-h3u">
+                      <field name="VAR" id="l.4;vLi;@vMk+mxL?HQt">sceneName</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="setHTMLElemStyle" id="e$#]vj9$:)^M#p8EE^ul">
+                  <field name="PROPERTY">display</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="VALUE">
+                    <block type="text" id="q]0q-G#NQ~BU*[ZP]_fX">
+                      <field name="TEXT">none</field>
+                    </block>
+                  </value>
+                  <value name="ID">
+                    <shadow type="text" id="5jRdxE6nN^^`=;S2sp3i">
+                      <field name="TEXT">preloader</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="setActiveCamera" id="1s~VA,whBUSsRsZU8j+K">
+                      <value name="CAMERA">
+                        <shadow type="objectList" id="W],L#XoKiJ2Xq7YHT6l;">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="text" id="3NPs5nku.$ak{Dh%.*4G">
+                          <field name="TEXT">Camera</field>
+                        </block>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defreturn" id="[^)Jc#tQ.+a.5ov16l;F" x="10" y="450">
+      <mutation statements="false">
+        <arg name="sceneName" varid="l.4;vLi;@vMk+mxL?HQt"/>
+      </mutation>
+      <field name="NAME">getFileName</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <value name="RETURN">
+        <block type="text_join" id="h0oc-.Y6cFIt}WWWpYcW">
+          <mutation items="3"/>
+          <value name="ADD0">
+            <block type="text" id="Ah2q%kwF*gj!*IU2p)T^">
+              <field name="TEXT">./assets/</field>
+            </block>
+          </value>
+          <value name="ADD1">
+            <block type="variables_get" id="W]B?%A,!M}lDn[CF8N!!">
+              <field name="VAR" id="l.4;vLi;@vMk+mxL?HQt">sceneName</field>
+            </block>
+          </value>
+          <value name="ADD2">
+            <block type="text" id="YWvM:]%P@Jr]PYQtN;8Z">
+              <field name="TEXT">.gltf</field>
+            </block>
+          </value>
+        </block>
+      </value>
+    </block>
+  </tab>
+  <editorsettings viewport-x="951.0000122070312" viewport-y="35.200016021728516" viewport-w="300" viewport-h="204.4" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

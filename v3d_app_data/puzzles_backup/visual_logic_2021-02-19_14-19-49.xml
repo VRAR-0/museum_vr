@@ -1,0 +1,26 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="true" scrollx="687.245721318196" scrolly="638.5040938472157" scale="0.5525219281866839"></tab>
+  <tab name="main" type="MainTab" active="false" scrollx="448.2279715381385" scrolly="466.6595931006485" scale="0.6935539619171461">
+    <block xmlns="https://developers.google.com/blockly/xml" type="appendScene" id=":p(IMv-uK]K;|k-c*leY" x="110" y="110">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" enableonprogress="false" enableonerror="false" loadcameras="true" loadlights="true" enablealias="false"></mutation>
+      <value name="URL">
+        <shadow type="text" id=".j9CE:ywLmZGlwmfCyJV">
+          <field name="TEXT">./assets/scene1.gltf</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="setActiveCamera" id=".Omf][`4-D$o_?E/O.;i">
+          <value name="CAMERA">
+            <shadow type="objectList" id="4mLbpS6oKks]FRNn00i5">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="text" id="(P6Dp*v^^Xazn19%Ovp#">
+              <field name="TEXT">Camera</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1011.3999755859375" viewport-y="46.40000915527344" viewport-w="497.2" viewport-h="315.6" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

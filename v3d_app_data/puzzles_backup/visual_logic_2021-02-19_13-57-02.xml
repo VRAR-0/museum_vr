@@ -1,0 +1,45 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="true" scrollx="823.2279849657571" scrolly="620.2782860810662" scale="0.5525219281866837">
+    <block xmlns="https://developers.google.com/blockly/xml" type="execScript" id="TRtjsYkBLrf2oj8-=/oP" x="-1130" y="-850">
+      <value name="TEXT">
+        <shadow type="textMultiline" id="BEM%_[8x_D})?t1_u~Cv">
+          <field name="HIGHLIGHT_MODE">css</field>
+          <field name="TEXT">.lds-hourglass {&#10;  display: inline-block;&#10;  position: relative;&#10;  width: 80px;&#10;  height: 80px;&#10;}&#10;.lds-hourglass:after {&#10;  content: " ";&#10;  display: block;&#10;  border-radius: 50%;&#10;  width: 0;&#10;  height: 0;&#10;  margin: 8px;&#10;  box-sizing: border-box;&#10;  border: 32px solid #fff;&#10;  border-color: #fff transparent #fff transparent;&#10;  animation: lds-hourglass 1.2s infinite;&#10;}&#10;@keyframes lds-hourglass {&#10;  0% {&#10;    transform: rotate(0);&#10;    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);&#10;  }&#10;  50% {&#10;    transform: rotate(900deg);&#10;    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);&#10;  }&#10;  100% {&#10;    transform: rotate(1800deg);&#10;  }&#10;}&#10;</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="execScript" id="GRw+~dmh-jp?!@jq,q}Q">
+          <value name="TEXT">
+            <shadow type="textMultiline" id="@,Z~]k0ME{Cl/5Ol3$e,">
+              <field name="HIGHLIGHT_MODE">html</field>
+              <field name="TEXT">&lt;div class="lds-hourglass"&gt;&lt;/div&gt;</field>
+            </shadow>
+          </value>
+        </block>
+      </next>
+    </block>
+  </tab>
+  <tab name="main" type="MainTab" active="false" scrollx="786.8748980594678" scrolly="466.6595931006485" scale="0.6935539619171461">
+    <block xmlns="https://developers.google.com/blockly/xml" type="appendScene" id=":p(IMv-uK]K;|k-c*leY" x="110" y="110">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" enableonprogress="false" enableonerror="false" loadcameras="true" loadlights="true" enablealias="false"></mutation>
+      <value name="URL">
+        <shadow type="text" id=".j9CE:ywLmZGlwmfCyJV">
+          <field name="TEXT">./assets/scene1.gltf</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="setActiveCamera" id=".Omf][`4-D$o_?E/O.;i">
+          <value name="CAMERA">
+            <shadow type="objectList" id="4mLbpS6oKks]FRNn00i5">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="text" id="(P6Dp*v^^Xazn19%Ovp#">
+              <field name="TEXT">Camera</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1011.3999755859375" viewport-y="46.40000915527344" viewport-w="497.2" viewport-h="315.6" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

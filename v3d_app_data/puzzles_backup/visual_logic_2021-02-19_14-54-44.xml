@@ -1,0 +1,97 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="687.245721318196" scrolly="638.5040938472157" scale="0.5525219281866839"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="512.2839067799432" scrolly="663.7063196853742" scale="1">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="@XO}6%BiL|}ZO082GT,?" type="">scene1</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="rCfv:O~c,b;9]wW+#o@q" x="-450" y="-590">
+      <field name="VAR" id="@XO}6%BiL|}ZO082GT,?">scene1</field>
+      <value name="VALUE">
+        <block type="dictCreateEmpty" id="yGcy_~6dOFnrPSG+Lh!7"/>
+      </value>
+      <next>
+        <block type="dictSet" id="eBoedqNlj99P|QOjj.`/">
+          <value name="DICT">
+            <block type="variables_get" id="rTo3FtSIiS.-/u)C%[N1">
+              <field name="VAR" id="@XO}6%BiL|}ZO082GT,?">scene1</field>
+            </block>
+          </value>
+          <value name="KEY">
+            <shadow type="text" id="ES;bNXJ(B2XC*fv69].*">
+              <field name="TEXT">portal</field>
+            </shadow>
+          </value>
+          <value name="VALUE">
+            <block type="lists_create_with" id="x1bw?xqmq@9#=}todtYB">
+              <mutation items="2"/>
+              <value name="ADD0">
+                <block type="text" id="~:U%6ES1i`Nrf}XZ2/}@">
+                  <field name="TEXT">scene2</field>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="text" id="Q$E_)a!VXJY8g[n!z%8J">
+                  <field name="TEXT">scene6</field>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="setHTMLElemStyle" id="7SjRchBxMRV-wJ-7jZXv" x="-450" y="-370">
+      <field name="PROPERTY">display</field>
+      <field name="PARENT">FALSE</field>
+      <value name="VALUE">
+        <block type="text" id="YX:S6_@sTJ_l2O#b^|y#">
+          <field name="TEXT">flex</field>
+        </block>
+      </value>
+      <value name="ID">
+        <shadow type="text" id="@#1Z*5TC4RE.:8WRk[zi">
+          <field name="TEXT">preloader</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="appendScene" id="%MmiQjV/d.ZB%(y@woxI">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" enableonprogress="true" enableonerror="false" loadcameras="true" loadlights="true" enablealias="false"></mutation>
+          <value name="URL">
+            <shadow type="text" id="XXncvuafsr2}XXvQaiO0">
+              <field name="TEXT">./assets/scene1.gltf</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="setHTMLElemStyle" id="NBj+,n4_=F*^tx{{_Z/`">
+              <field name="PROPERTY">display</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <block type="text" id="aI]4UxXC-!2`g`p#d8|s">
+                  <field name="TEXT">none</field>
+                </block>
+              </value>
+              <value name="ID">
+                <shadow type="text" id="YN_~+l#*8(mSm:oAl9!3">
+                  <field name="TEXT">preloader</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="setActiveCamera" id="25`/tGwo=#y4nUGWqn+R">
+                  <value name="CAMERA">
+                    <shadow type="objectList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="text" id="GkO4E1GEpQ,o}-Bp,X*s">
+                      <field name="TEXT">Camera</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </next>
+    </block>
+  </tab>
+  <tab name="loader" type="SecondaryTab" active="false" scrollx="-37.599975585937614" scrolly="-25.600006103515454" scale="0.9"></tab>
+  <editorsettings viewport-x="976.2000854492187" viewport-y="50.400020599365234" viewport-w="497.2" viewport-h="315.6" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
