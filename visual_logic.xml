@@ -1,6 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <tab name="init" type="InitTab" active="false" scrollx="687.245721318196" scrolly="638.5040938472157" scale="0.5525219281866839"></tab>
-  <tab name="main" type="MainTab" active="true" scrollx="581.5510462869481" scrolly="766.5358616347053" scale="0.7835261664684591">
+  <tab name="main" type="MainTab" active="false" scrollx="581.5510462869481" scrolly="766.5358616347053" scale="0.7835261664684591">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="@XO}6%BiL|}ZO082GT,?" type="">scenes</variable>
       <variable id="%xokwK]JtpimB?Xz7CO%" type="">activeScene</variable>
@@ -268,7 +268,7 @@
       </next>
     </block>
   </tab>
-  <tab name="functions" type="SecondaryTab" active="false" scrollx="0.0000785772117524175" scrolly="0.0000824292432639595" scale="0.9000000000000007">
+  <tab name="functions" type="SecondaryTab" active="true" scrollx="0.0000785772117524175" scrolly="0.0000824292432639595" scale="0.9000000000000007">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="l.4;vLi;@vMk+mxL?HQt" type="">sceneName</variable>
       <variable id="%xokwK]JtpimB?Xz7CO%" type="">activeScene</variable>
@@ -295,10 +295,10 @@
             </shadow>
           </value>
           <next>
-            <block type="loadScene" id="ku~^*wE?XIY]mSqt`SHF">
+            <block type="loadScene" id="_s]$RJv$Y~$m{[C#*JL9">
               <mutation xmlns="http://www.w3.org/1999/xhtml" enableonprogress="false" enableonerror="false" enablealias="false"></mutation>
               <value name="URL">
-                <shadow type="text" id="1*;.1{RH[]!$Hb*9,d!-">
+                <shadow type="text" id="EziREr%V#o=fCWUR-KK~">
                   <field name="TEXT">path/to/scene.gltf</field>
                 </shadow>
                 <block type="procedures_callreturn" id="RpoJm37@s5#!u@C7{loc">
@@ -382,6 +382,54 @@
                               </next>
                             </block>
                           </statement>
+                          <next>
+                            <block type="whenHovered" id="W_Ce8Xpo:V2BQ{ea;0AB">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+                              <field name="X_RAY">FALSE</field>
+                              <value name="VALUE">
+                                <shadow type="objectList" id="BvQnNs]o~-9is=*S|JY5">
+                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                </shadow>
+                                <block type="dictGet" id="u(3=@81raEX:wCntk2x;">
+                                  <value name="DICT">
+                                    <block type="variables_get" id="S59n$SJJE1]HD8,e-}:l">
+                                      <field name="VAR" id="@XO}6%BiL|}ZO082GT,?">scenes</field>
+                                    </block>
+                                  </value>
+                                  <value name="KEY">
+                                    <shadow type="text">
+                                      <field name="TEXT">scene1</field>
+                                    </shadow>
+                                    <block type="variables_get" id="|cLyBm}OmeRa1o7][M(/">
+                                      <field name="VAR" id="%xokwK]JtpimB?Xz7CO%">activeScene</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                              <statement name="DO_OVER">
+                                <block type="outline" id="s:]3e=F#[CC`6O]xa=V-">
+                                  <field name="DO_WHAT">ENABLE</field>
+                                  <value name="TARGET">
+                                    <shadow type="objectList" id="kWGYl+1VZw?+7Q?gW_d~">
+                                      <field name="FIELDNAME">&lt;none&gt;</field>
+                                    </shadow>
+                                    <block type="hoveredObject" id="y((=~:-BohTcw_VgW@RW"/>
+                                  </value>
+                                </block>
+                              </statement>
+                              <statement name="DO_OUT">
+                                <block type="outline" id="q~Ikad$Slix-g#Tqq;c2">
+                                  <field name="DO_WHAT">DISABLE</field>
+                                  <value name="TARGET">
+                                    <shadow type="objectList" id="Qi]h0#%!hjby^SZAv7}g">
+                                      <field name="FIELDNAME">&lt;none&gt;</field>
+                                    </shadow>
+                                    <block type="hoveredObject" id="kO2TE.:3FS|Xq,ooxRN$"/>
+                                  </value>
+                                </block>
+                              </statement>
+                            </block>
+                          </next>
                         </block>
                       </next>
                     </block>
@@ -393,7 +441,7 @@
         </block>
       </statement>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defreturn" id="[^)Jc#tQ.+a.5ov16l;F" x="10" y="590">
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defreturn" id="[^)Jc#tQ.+a.5ov16l;F" x="870" y="350">
       <mutation statements="false">
         <arg name="sceneName" varid="l.4;vLi;@vMk+mxL?HQt"/>
       </mutation>
