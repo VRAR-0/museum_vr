@@ -1,6 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <tab name="init" type="InitTab" active="false" scrollx="687.245721318196" scrolly="638.5040938472157" scale="0.5525219281866839"></tab>
-  <tab name="main" type="MainTab" active="true" scrollx="711.6702652941676" scrolly="531.8282569382827" scale="1">
+  <tab name="main" type="MainTab" active="false" scrollx="619.0683593917236" scrolly="617.0350797712161" scale="0.543417677019953">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="@XO}6%BiL|}ZO082GT,?" type="">scenes</variable>
       <variable id="uQEDsau,9`s^5-%,p(XD" type="">infos</variable>
@@ -418,7 +418,7 @@
       </next>
     </block>
   </tab>
-  <tab name="functions" type="SecondaryTab" active="false" scrollx="-144.27311967963942" scrolly="-13.041690055406434" scale="0.7835261664684592">
+  <tab name="functions" type="SecondaryTab" active="true" scrollx="-267.5372598519516" scrolly="-33.55627700025275" scale="1">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="l.4;vLi;@vMk+mxL?HQt" type="">sceneName</variable>
       <variable id="AyPZx9~|e8xuwp3AX4,u" type="">oldScene</variable>
@@ -466,7 +466,7 @@
               </value>
               <next>
                 <block type="appendScene" id="qDq8dKMq[-$^!Yu_NnOz">
-                  <mutation xmlns="http://www.w3.org/1999/xhtml" enableonprogress="false" enableonerror="false" loadcameras="true" loadlights="false" enablealias="false"></mutation>
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" enableonprogress="true" enableonerror="false" loadcameras="true" loadlights="false" enablealias="false"></mutation>
                   <value name="URL">
                     <shadow type="text" id="+p.Fhu+o+j3b}Uk-.55W">
                       <field name="TEXT">path/to/scene.gltf</field>
@@ -482,6 +482,35 @@
                       </value>
                     </block>
                   </value>
+                  <statement name="DO_PROGRESS">
+                    <block type="setHTMLElemAttribute" id="T$H^!XpDEBzCt0NL[Pj7">
+                      <field name="ATTRIBUTE">innerHTML</field>
+                      <field name="PARENT">FALSE</field>
+                      <value name="VALUE">
+                        <block type="text_join" id="RMl*.n7m+KL[:ilr5|rh">
+                          <mutation items="3"/>
+                          <value name="ADD0">
+                            <block type="text" id="-DB_zYGX.j}jFq#f?*6a">
+                              <field name="TEXT">Пожалуйста, подождите немного...</field>
+                            </block>
+                          </value>
+                          <value name="ADD1">
+                            <block type="percentage2" id="Q3?KAr0p_5_|5xGho_5+"/>
+                          </value>
+                          <value name="ADD2">
+                            <block type="text" id="U*qQ{|%2eWG|yI$3yQ?V">
+                              <field name="TEXT">%</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="ID">
+                        <shadow type="text" id="Whn8U!Q!e,K}NqcL[)IT">
+                          <field name="TEXT">preloader_text</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </statement>
                   <statement name="DO">
                     <block type="setHTMLElemStyle" id="e$#]vj9$:)^M#p8EE^ul">
                       <field name="PROPERTY">display</field>
@@ -642,8 +671,8 @@
                                               </value>
                                               <next>
                                                 <block type="replaceTexture" id="wW)oZqG=_N{v!KXxb=,:">
-                                                  <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
-                                                  <field name="OLD_TEX_NAME">screen</field>
+                                                  <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="true" flextexinput="false"></mutation>
+                                                  <field name="OLD_TEX_NAME">video_screen.jpg</field>
                                                   <value name="MATERIAL">
                                                     <shadow type="materialList" id="^56LCAT*qUQE8o.j29T.">
                                                       <field name="FIELDNAME">tv_video</field>
@@ -662,27 +691,27 @@
                                                       </value>
                                                     </block>
                                                   </value>
+                                                  <statement name="DO">
+                                                    <block type="playSound" id="Xf=[$Rz0[b.fk,g~=I_3">
+                                                      <field name="LOOP">FALSE</field>
+                                                      <value name="VALUE">
+                                                        <block type="procedures_callreturn" id="Ehw91t]/[7jH?ZSYUW/~">
+                                                          <mutation name="getVideoName">
+                                                            <arg name="sceneName"/>
+                                                          </mutation>
+                                                          <value name="ARG0">
+                                                            <block type="pickedObject" id="1Sc?9Oct-Zy-Fux^0P+1"/>
+                                                          </value>
+                                                        </block>
+                                                      </value>
+                                                    </block>
+                                                  </statement>
                                                   <next>
                                                     <block type="variables_set" id="wl},8q:j6,3zjGLW7yG1">
                                                       <field name="VAR" id="lcSC;w*Kw~(*}gbr57Y}">currentVideoName</field>
                                                       <value name="VALUE">
                                                         <block type="pickedObject" id="5HGSq~.VNODgFAhHS/:)"/>
                                                       </value>
-                                                      <next>
-                                                        <block type="playSound" id="Xf=[$Rz0[b.fk,g~=I_3">
-                                                          <field name="LOOP">FALSE</field>
-                                                          <value name="VALUE">
-                                                            <block type="procedures_callreturn" id="Ehw91t]/[7jH?ZSYUW/~">
-                                                              <mutation name="getVideoName">
-                                                                <arg name="sceneName"/>
-                                                              </mutation>
-                                                              <value name="ARG0">
-                                                                <block type="pickedObject" id="1Sc?9Oct-Zy-Fux^0P+1"/>
-                                                              </value>
-                                                            </block>
-                                                          </value>
-                                                        </block>
-                                                      </next>
                                                     </block>
                                                   </next>
                                                 </block>
@@ -856,7 +885,7 @@
         </block>
       </statement>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defreturn" id=".Zg/t[I-Nryfr^[75B{u" x="1110" y="510">
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defreturn" id=".Zg/t[I-Nryfr^[75B{u" x="1190" y="510">
       <mutation statements="false">
         <arg name="sceneName" varid="l.4;vLi;@vMk+mxL?HQt"/>
       </mutation>

@@ -12,8 +12,11 @@
    viewBox="0 0 338.66667 190.5"
    version="1.1"
    id="svg8"
-   inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)"
-   sodipodi:docname="about.svg">
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="about.svg"
+   inkscape:export-filename="D:\verge3d\applications\museum_vr\src\about.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
   <defs
      id="defs2">
     <rect
@@ -31,17 +34,17 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="514.42522"
-     inkscape:cy="298.93548"
+     inkscape:cx="496.07059"
+     inkscape:cy="283.41821"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="false"
      units="px"
      inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-height="1051"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata5">
@@ -51,7 +54,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -70,24 +73,24 @@
        xml:space="preserve"
        id="text833"
        style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect835);fill:#080010;fill-opacity:1;stroke:none;"
-       transform="translate(-1.889881,-7.1815472)"><tspan
+       transform="matrix(1.0090083,0,0,0.92796957,1.3252075,3.8346526)"><tspan
          x="20.410156"
-         y="29.309762"><tspan
-           style="fill:#080010;fill-opacity:1">Кожина Александра                  Прусаков Владимир</tspan></tspan></text>
+         y="29.018037"><tspan
+           style="fill:#080010;fill-opacity:1">Кожина Александра                 Прусаков Владимир</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:293.644;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="21.922617"
        y="40.821426"
        id="text841"
-       transform="translate(-4.5357139,-6.0476164)"><tspan
+       transform="matrix(1.0090083,0,0,0.92796957,-0.20031814,4.8869066)"><tspan
          x="21.922617"
          y="40.821426"><tspan
            style="fill:#000000;fill-opacity:1;stroke-width:0.264583">Саухина Вероника                    Дарья Белова
 </tspan></tspan><tspan
          x="21.922617"
          y="54.050553"><tspan
-           style="fill:#000000;fill-opacity:1;stroke-width:0.264583">Морозов Игорь                         Шингарева Виктория
+           style="fill:#000000;fill-opacity:1;stroke-width:0.264583">Морозов Игорь                          Шингарева Виктория
 </tspan></tspan><tspan
          x="21.922617"
          y="67.279679"><tspan
@@ -95,63 +98,138 @@
 </tspan></tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="17.008924"
-       y="75.595238"
-       id="text845"><tspan
+       style="font-style:normal;font-weight:normal;font-size:10.2408px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.256021"
+       x="21.386862"
+       y="83.365311"
+       id="text845"
+       transform="scale(1.0427507,0.95900199)"><tspan
          sodipodi:role="line"
          id="tspan843"
-         x="17.008924"
-         y="75.595238"
-         style="fill:#000000;fill-opacity:1;stroke-width:0.264583">Рыжов Никита                          Егор Бузанов </tspan><tspan
+         x="21.386862"
+         y="83.365311"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.256021">Рыжов Никита                          Егор Бузанов </tspan><tspan
          sodipodi:role="line"
-         x="17.008924"
-         y="88.824364"
-         style="fill:#000000;fill-opacity:1;stroke-width:0.264583"
-         id="tspan847">Бондарцов Александр               Прусаков Александр </tspan><tspan
+         x="21.386862"
+         y="96.166359"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.256021"
+         id="tspan847">Бондарцов Александр             Прусаков Александр </tspan><tspan
          sodipodi:role="line"
-         x="17.008924"
-         y="102.05349"
-         style="fill:#000000;fill-opacity:1;stroke-width:0.264583"
+         x="21.386862"
+         y="108.96741"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.256021"
          id="tspan849">Васьков Роман                          Сергей Коршанов</tspan><tspan
          sodipodi:role="line"
-         x="17.008924"
-         y="115.28261"
-         style="fill:#000000;fill-opacity:1;stroke-width:0.264583"
+         x="21.386862"
+         y="121.76846"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.256021"
          id="tspan851">Афанасьев Иван </tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#2200cf;fill-opacity:1;stroke:none;stroke-width:0.264583;"
-       x="79.375"
-       y="10.205358"
-       id="text857"><tspan
+       style="font-style:normal;font-weight:normal;font-size:9.69134px;line-height:1.25;font-family:sans-serif;fill:#2200cf;fill-opacity:1;stroke:none;stroke-width:0.242284"
+       x="76.973427"
+       y="14.71897"
+       id="text857"
+       transform="scale(1.0808034,0.92523764)"><tspan
          sodipodi:role="line"
-         x="79.375"
-         y="10.205358"
-         style="stroke-width:0.264583;fill:#2200cf;fill-opacity:1;"
+         x="76.973427"
+         y="14.71897"
+         style="fill:#2200cf;fill-opacity:1;stroke-width:0.242284"
          id="tspan859">НАД ПРОГРАММОЙ РАБОТАЛИ:</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="15.11905"
-       y="130.40179"
-       id="text865"><tspan
+       style="font-style:normal;font-weight:normal;font-size:10.2408px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.256021"
+       x="21.02112"
+       y="134.56966"
+       id="text865"
+       transform="scale(1.0427507,0.95900199)"><tspan
          sodipodi:role="line"
          id="tspan863"
-         x="15.11905"
-         y="130.40179"
-         style="fill:#000000;fill-opacity:1;stroke-width:0.264583">Редкозубов Данил </tspan></text>
+         x="21.02112"
+         y="134.56966"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.256021">Редкозубов Данил </tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:77.2038px;line-height:1.25;font-family:sans-serif;fill:#1bd0c3;fill-opacity:0.75903612;stroke:none;stroke-width:1.9301;"
-       x="192.63475"
-       y="169.50542"
+       style="font-style:normal;font-weight:normal;font-size:63.9503px;line-height:1.25;font-family:sans-serif;fill:#1bd0c3;fill-opacity:0.759036;stroke:none;stroke-width:1.59877"
+       x="130.79243"
+       y="203.02629"
        id="text873"
-       transform="matrix(1.2398872,0.06771617,0.07354278,0.8105415,0,0)"><tspan
+       transform="matrix(1.5250114,0.0550556,0.09045466,0.65899838,0,0)"><tspan
          sodipodi:role="line"
          id="tspan871"
-         x="192.63475"
-         y="169.50542"
-         style="stroke-width:1.9301;fill:#1bd0c3;fill-opacity:0.75903612;">:)</tspan></text>
+         x="130.79243"
+         y="203.02629"
+         style="fill:#1bd0c3;fill-opacity:0.759036;stroke-width:1.59877">:)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.3932px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.309829"
+       x="118.10743"
+       y="272.30768"
+       id="text865-6"
+       transform="matrix(0.84527267,-0.48440472,0.51036504,0.8905727,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan863-6"
+         x="118.10743"
+         y="272.30768"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.309829">IT-CUBE.Балашов</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:6.75294px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.168824"
+       x="17.448475"
+       y="155.09181"
+       id="text865-6-8"
+       transform="scale(1.0422336,0.95947781)"><tspan
+         sodipodi:role="line"
+         id="tspan863-6-8"
+         x="17.448475"
+         y="155.09181"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.168824">Использованный инструментарий:</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.82426px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.145607"
+       x="19.016148"
+       y="157.58492"
+       id="text865-6-8-7"
+       transform="scale(0.99664753,1.0033637)"><tspan
+         sodipodi:role="line"
+         id="tspan863-6-8-0"
+         x="19.016148"
+         y="157.58492"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.145607">Verge3D - фреймворк для создания 3D веб-приложений</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.82426px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.145607"
+       x="18.45121"
+       y="165.25339"
+       id="text865-6-8-7-6"
+       transform="scale(0.99664753,1.0033637)"><tspan
+         sodipodi:role="line"
+         id="tspan863-6-8-0-6"
+         x="18.45121"
+         y="165.25339"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.145607">Blender - программа для 3D моделирования</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.82426px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.145607"
+       x="18.21854"
+       y="173.23471"
+       id="text865-6-8-7-6-7"
+       transform="scale(0.99664753,1.0033637)"><tspan
+         sodipodi:role="line"
+         id="tspan863-6-8-0-6-6"
+         x="18.21854"
+         y="173.23471"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.145607">Gimp - программа для обработки 2D изображений</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.82426px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.145607"
+       x="18.339447"
+       y="180.60808"
+       id="text865-6-8-7-6-7-6"
+       transform="scale(0.99664753,1.0033637)"><tspan
+         sodipodi:role="line"
+         id="tspan863-6-8-0-6-6-4"
+         x="18.339447"
+         y="180.60808"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.145607">Inkscape - программа для обработки 2D векторных изображений</tspan></text>
   </g>
 </svg>
