@@ -1,0 +1,58 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="687.245721318196" scrolly="638.5040938472157" scale="0.5525219281866839"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="512.2839067799432" scrolly="663.7063196853742" scale="1">
+    <block xmlns="https://developers.google.com/blockly/xml" type="setHTMLElemStyle" id="{JEu*JF#4vJ`a2.mWgVP" x="-490" y="-510">
+      <field name="PROPERTY">display</field>
+      <field name="PARENT">FALSE</field>
+      <value name="VALUE">
+        <block type="text" id="BlrB}AEc;Y@MwGo-Neph">
+          <field name="TEXT">flex</field>
+        </block>
+      </value>
+      <value name="ID">
+        <shadow type="text" id="0Cy#y%Q82#]#ObNVm%9`">
+          <field name="TEXT">preloader</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="appendScene" id=":p(IMv-uK]K;|k-c*leY">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" enableonprogress="true" enableonerror="false" loadcameras="true" loadlights="true" enablealias="false"></mutation>
+          <value name="URL">
+            <shadow type="text" id=".j9CE:ywLmZGlwmfCyJV">
+              <field name="TEXT">./assets/scene1.gltf</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="setHTMLElemStyle" id="*(D3jOPZwupYAy54bk+^" disabled="true">
+              <field name="PROPERTY">display</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <block type="text" id="K(bSt^JrzG?S{6[{rEzR">
+                  <field name="TEXT">none</field>
+                </block>
+              </value>
+              <value name="ID">
+                <shadow type="text" id="(Gf)+x0L@$.pLr#[%e9N">
+                  <field name="TEXT">preloader</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="setActiveCamera" id=".Omf][`4-D$o_?E/O.;i">
+                  <value name="CAMERA">
+                    <shadow type="objectList" id="4mLbpS6oKks]FRNn00i5">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="text" id="(P6Dp*v^^Xazn19%Ovp#">
+                      <field name="TEXT">Camera</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </next>
+    </block>
+  </tab>
+  <editorsettings viewport-x="740.2000244140625" viewport-y="54.400020599365234" viewport-w="497.2" viewport-h="315.6" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

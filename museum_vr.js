@@ -12,7 +12,7 @@ var CONTAINER_ID = 'v3d-container';
 
     var PUZZLES_DIR = '/puzzles/';
     var logicURL = params.logic ? params.logic : '__LOGIC__visual_logic.js'.replace('__LOGIC__', '');
-    var sceneURL = params.load ? params.load : '__URL__museum_vr.gltf'.replace('__URL__', '');
+    var sceneURL = params.load ? params.load : '__URL__museum_vr.gltf'.replace('__URL__', './assets/');
     if (!sceneURL) {
         console.log('No scene URL specified');
         return;

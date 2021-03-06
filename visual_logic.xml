@@ -1,63 +1,951 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <tab name="init" type="InitTab" active="false" scrollx="981.5" scrolly="500.5" scale="0.9"></tab>
-  <tab name="main" type="MainTab" active="true" scrollx="888.1666259765625" scrolly="511.61109924316406" scale="0.9">
-    <block xmlns="https://developers.google.com/blockly/xml" type="setTimeout" id="@Q*|FJ?MBzMUGX])K6e)" x="-870" y="-470">
+  <tab name="init" type="InitTab" active="false" scrollx="687.245721318196" scrolly="638.5040938472157" scale="0.5525219281866839"></tab>
+  <tab name="main" type="MainTab" active="false" scrollx="619.0683593917236" scrolly="617.0350797712161" scale="0.543417677019953">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="@XO}6%BiL|}ZO082GT,?" type="">scenes</variable>
+      <variable id="uQEDsau,9`s^5-%,p(XD" type="">infos</variable>
+      <variable id="%xokwK]JtpimB?Xz7CO%" type="">activeScene</variable>
+      <variable id="AyPZx9~|e8xuwp3AX4,u" type="">oldScene</variable>
+      <variable id="l.4;vLi;@vMk+mxL?HQt" type="">sceneName</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="rCfv:O~c,b;9]wW+#o@q" x="-630" y="-910">
+      <field name="VAR" id="@XO}6%BiL|}ZO082GT,?">scenes</field>
       <value name="VALUE">
-        <shadow type="math_number" id="U^gSYlwX2E.S%{`kYKxz">
-          <field name="NUM">1</field>
-        </shadow>
+        <block type="dictCreateEmpty" id="yGcy_~6dOFnrPSG+Lh!7"/>
       </value>
-      <statement name="DO">
-        <block type="loadScene" id="dHxX=5qQ*pzr(-f|%H:,">
-          <mutation xmlns="http://www.w3.org/1999/xhtml" enableonprogress="false" enablealias="false"></mutation>
-          <value name="URL">
-            <shadow type="text" id="cP]0sFi+D]c2]7H3n07Q">
-              <field name="TEXT">./assets/scene1.gltf</field>
+      <next>
+        <block type="dictSet" id="eBoedqNlj99P|QOjj.`/">
+          <value name="DICT">
+            <block type="variables_get" id="rTo3FtSIiS.-/u)C%[N1">
+              <field name="VAR" id="@XO}6%BiL|}ZO082GT,?">scenes</field>
+            </block>
+          </value>
+          <value name="KEY">
+            <shadow type="text" id="ES;bNXJ(B2XC*fv69].*">
+              <field name="TEXT">scene1</field>
             </shadow>
           </value>
-          <statement name="DO">
-            <block type="whenClicked" id="?m,n|+lLi@}|uqw/8CdL">
-              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
-              <field name="X_RAY">FALSE</field>
-              <field name="DOUBLE_CLICK">FALSE</field>
-              <field name="LEFT_BUTTON">TRUE</field>
-              <field name="MIDDLE_BUTTON">TRUE</field>
-              <field name="RIGHT_BUTTON">TRUE</field>
-              <value name="VALUE">
-                <shadow type="objectList" id="w=NDLp%Q?M4%nEhG;xb|">
-                  <field name="FIELDNAME">a</field>
+          <value name="VALUE">
+            <block type="lists_create_with" id="x1bw?xqmq@9#=}todtYB">
+              <mutation items="2"/>
+              <value name="ADD0">
+                <block type="text" id="~:U%6ES1i`Nrf}XZ2/}@">
+                  <field name="TEXT">scene2</field>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="text" id="Q$E_)a!VXJY8g[n!z%8J">
+                  <field name="TEXT">scene6</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="dictSet" id="C1x%kPV3Kez9jNnoH]Q]">
+              <value name="DICT">
+                <block type="variables_get" id="SAIaA4n!uyk?~M8T.cC9">
+                  <field name="VAR" id="@XO}6%BiL|}ZO082GT,?">scenes</field>
+                </block>
+              </value>
+              <value name="KEY">
+                <shadow type="text" id="vZEee75TQexpo`Ju#2,|">
+                  <field name="TEXT">scene2</field>
                 </shadow>
               </value>
-              <statement name="DO">
-                <block type="loadScene" id="S/UD[mId/_ua,JA~8,8L">
-                  <mutation xmlns="http://www.w3.org/1999/xhtml" enableonprogress="false" enablealias="false"></mutation>
-                  <value name="URL">
-                    <shadow type="text" id="t+!w5-=yaq4nG2`M5VLk">
-                      <field name="TEXT">./assets/scene2.gltf</field>
+              <value name="VALUE">
+                <block type="lists_create_with" id="P6;eGjtRJM5t5(jMF`l^">
+                  <mutation items="4"/>
+                  <value name="ADD0">
+                    <block type="text" id="CGu;=Jkloc$5HI{q/9}.">
+                      <field name="TEXT">scene1</field>
+                    </block>
+                  </value>
+                  <value name="ADD1">
+                    <block type="text" id="6BX_}pnaan!]3ymqhFG=">
+                      <field name="TEXT">scene5</field>
+                    </block>
+                  </value>
+                  <value name="ADD2">
+                    <block type="text" id="xKm#BGaxbNN$JnW{z1P7">
+                      <field name="TEXT">scene6</field>
+                    </block>
+                  </value>
+                  <value name="ADD3">
+                    <block type="text" id="OMvq{[!KD;l,VQSS,ik#">
+                      <field name="TEXT">scene7</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="dictSet" id="+0,[t#t/6h?1qOiHxV2a">
+                  <value name="DICT">
+                    <block type="variables_get" id="0wXWFI^y;%Zr~5|}[K|X">
+                      <field name="VAR" id="@XO}6%BiL|}ZO082GT,?">scenes</field>
+                    </block>
+                  </value>
+                  <value name="KEY">
+                    <shadow type="text" id="lw5p0)/4n(=9f!`wI/Jy">
+                      <field name="TEXT">scene3</field>
                     </shadow>
                   </value>
-                  <statement name="DO">
-                    <block type="whenClicked" id="2rvzvSfM}LV!cVB;0@qD">
-                      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
-                      <field name="X_RAY">FALSE</field>
-                      <field name="DOUBLE_CLICK">FALSE</field>
-                      <field name="LEFT_BUTTON">TRUE</field>
-                      <field name="MIDDLE_BUTTON">TRUE</field>
-                      <field name="RIGHT_BUTTON">TRUE</field>
+                  <value name="VALUE">
+                    <block type="lists_create_with" id="3RMeY[c`e=QaY]-Gosmg">
+                      <mutation items="3"/>
+                      <value name="ADD0">
+                        <block type="text" id="w6K`D6*UE+W;[+,:4T^k">
+                          <field name="TEXT">scene2</field>
+                        </block>
+                      </value>
+                      <value name="ADD1">
+                        <block type="text" id="NQsn+[.[YVJyMd/xhq*L">
+                          <field name="TEXT">scene4</field>
+                        </block>
+                      </value>
+                      <value name="ADD2">
+                        <block type="text" id="-7HGXz9J[@ULEX9y!%0?">
+                          <field name="TEXT">scene5</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="dictSet" id="0lAKogc~`!|H]xR-7J(F">
+                      <value name="DICT">
+                        <block type="variables_get" id="0lUV70`vQ?W}0]t9Ee$Z">
+                          <field name="VAR" id="@XO}6%BiL|}ZO082GT,?">scenes</field>
+                        </block>
+                      </value>
+                      <value name="KEY">
+                        <shadow type="text" id=":4(IPoV#aRc^x9MFK1~/">
+                          <field name="TEXT">scene4</field>
+                        </shadow>
+                      </value>
                       <value name="VALUE">
-                        <shadow type="objectList" id="|nj8bs{#;CfCBP@FnSdk">
-                          <field name="FIELDNAME">Plane.001</field>
+                        <block type="lists_create_with" id="21sYUa)q+oJl77st98R)">
+                          <mutation items="3"/>
+                          <value name="ADD0">
+                            <block type="text" id="D#Jf0)4p9YLZ(=5DF*}{">
+                              <field name="TEXT">scene3</field>
+                            </block>
+                          </value>
+                          <value name="ADD1">
+                            <block type="text" id="ZC5;A|WBukCl[7oo*PDw">
+                              <field name="TEXT">scene5</field>
+                            </block>
+                          </value>
+                          <value name="ADD2">
+                            <block type="text" id="=1.p[1_0Yj0[p$l:q6oQ">
+                              <field name="TEXT">scene6</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="dictSet" id="7Ko;r9UH)_gQki;(^cXX">
+                          <value name="DICT">
+                            <block type="variables_get" id="8f0QAS(9^W`A|~mXTyng">
+                              <field name="VAR" id="@XO}6%BiL|}ZO082GT,?">scenes</field>
+                            </block>
+                          </value>
+                          <value name="KEY">
+                            <shadow type="text" id="/6J8jn3R_5zYyQ0J|1Ww">
+                              <field name="TEXT">scene5</field>
+                            </shadow>
+                          </value>
+                          <value name="VALUE">
+                            <block type="lists_create_with" id="epU-v3t-]C}:P/x?Vsa[">
+                              <mutation items="3"/>
+                              <value name="ADD0">
+                                <block type="text" id="kO-{!j/BWrAn}{lrvWZ)">
+                                  <field name="TEXT">scene3</field>
+                                </block>
+                              </value>
+                              <value name="ADD1">
+                                <block type="text" id=",23nl7L6T;h)p}VTXE5-">
+                                  <field name="TEXT">scene4</field>
+                                </block>
+                              </value>
+                              <value name="ADD2">
+                                <block type="text" id="k2Sjzk/+UrffRFA7qZ^)">
+                                  <field name="TEXT">scene6</field>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="dictSet" id="jx2aa2c%R^CRO=#T?a7Q">
+                              <value name="DICT">
+                                <block type="variables_get" id=":^K7-[!_~fYO%C~tdkCO">
+                                  <field name="VAR" id="@XO}6%BiL|}ZO082GT,?">scenes</field>
+                                </block>
+                              </value>
+                              <value name="KEY">
+                                <shadow type="text" id="KcIWE8kP;GoN!rNkZve`">
+                                  <field name="TEXT">scene6</field>
+                                </shadow>
+                              </value>
+                              <value name="VALUE">
+                                <block type="lists_create_with" id="`Rb83Xno{s#(0Ez[(G8j">
+                                  <mutation items="4"/>
+                                  <value name="ADD0">
+                                    <block type="text" id="A3O2GW`Z(7,!]ryE|yjy">
+                                      <field name="TEXT">scene1</field>
+                                    </block>
+                                  </value>
+                                  <value name="ADD1">
+                                    <block type="text" id="f_dc2P7Y3D7w8L66VKTN">
+                                      <field name="TEXT">scene2</field>
+                                    </block>
+                                  </value>
+                                  <value name="ADD2">
+                                    <block type="text" id="ZqG@`2@wOLO}p{kL5/tF">
+                                      <field name="TEXT">scene5</field>
+                                    </block>
+                                  </value>
+                                  <value name="ADD3">
+                                    <block type="text" id="AGo]^,NJ*A)nkOH;nX6+">
+                                      <field name="TEXT">scene7</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="dictSet" id="hm^dWNu-5Q]*r4-,S(]H">
+                                  <value name="DICT">
+                                    <block type="variables_get" id="gNCxQYrGVw[$#Nw.hvBj">
+                                      <field name="VAR" id="@XO}6%BiL|}ZO082GT,?">scenes</field>
+                                    </block>
+                                  </value>
+                                  <value name="KEY">
+                                    <shadow type="text" id="dwhw%8,PI_@qw/G-HAOD">
+                                      <field name="TEXT">scene7</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="VALUE">
+                                    <block type="lists_create_with" id="$6UAli;P$n1,dVkMtb6a">
+                                      <mutation items="1"/>
+                                      <value name="ADD0">
+                                        <block type="text" id="lN%t![cM(QHxx2G{-)=S">
+                                          <field name="TEXT">scene6</field>
+                                        </block>
+                                      </value>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="variables_set" id="btuJ]We$-X^-ml$v4^1k">
+                                      <field name="VAR" id="uQEDsau,9`s^5-%,p(XD">infos</field>
+                                      <value name="VALUE">
+                                        <block type="dictCreateEmpty" id=".W0kd35j=IQRq..`*rvn"/>
+                                      </value>
+                                      <next>
+                                        <block type="dictSet" id="c!FSFTwg@8co?EB#GL/y">
+                                          <value name="DICT">
+                                            <block type="variables_get" id="VJ`+Uo9~nJVd1JID`H4K">
+                                              <field name="VAR" id="uQEDsau,9`s^5-%,p(XD">infos</field>
+                                            </block>
+                                          </value>
+                                          <value name="KEY">
+                                            <shadow type="text" id="~ygya?[odfcZj2ak[l#f">
+                                              <field name="TEXT">scene1</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="VALUE">
+                                            <block type="lists_create_with" id="=Fe{g3Bh4DTT^{Gae$9N">
+                                              <mutation items="1"/>
+                                              <value name="ADD0">
+                                                <block type="text" id="Le4eIlgRJSK8u(#J)tC#">
+                                                  <field name="TEXT">borodinskoe1</field>
+                                                </block>
+                                              </value>
+                                            </block>
+                                          </value>
+                                          <next>
+                                            <block type="dictSet" id="biLkn7d7h:DNk_bmY!9e">
+                                              <value name="DICT">
+                                                <block type="variables_get" id="(iBdPM_$##Tpqs8-be3{">
+                                                  <field name="VAR" id="uQEDsau,9`s^5-%,p(XD">infos</field>
+                                                </block>
+                                              </value>
+                                              <value name="KEY">
+                                                <shadow type="text" id="_%#IeG$fuq2aM+}YMyK8">
+                                                  <field name="TEXT">scene2</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="VALUE">
+                                                <block type="lists_create_with" id="X65gV7?Q!)O.uB/R]*N7">
+                                                  <mutation items="1"/>
+                                                  <value name="ADD0">
+                                                    <block type="text" id="EBnOzHsLX^4Y:WHv+#OG">
+                                                      <field name="TEXT">kyrskai2</field>
+                                                    </block>
+                                                  </value>
+                                                </block>
+                                              </value>
+                                              <next>
+                                                <block type="dictSet" id="2sFw@k.it!4E+u_t@:G@">
+                                                  <value name="DICT">
+                                                    <block type="variables_get" id="aqdl3j22/!`Gd^9S?m$3">
+                                                      <field name="VAR" id="uQEDsau,9`s^5-%,p(XD">infos</field>
+                                                    </block>
+                                                  </value>
+                                                  <value name="KEY">
+                                                    <shadow type="text" id="^v[tp9-D]#tgg_%4^|UV">
+                                                      <field name="TEXT">scene3</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="VALUE">
+                                                    <block type="lists_create_with" id="v*A{^x*O}LS?]SsUIU_S">
+                                                      <mutation items="2"/>
+                                                      <value name="ADD0">
+                                                        <block type="text" id="7LKDA0oqled)v2@~l5})">
+                                                          <field name="TEXT">vperednazapad3</field>
+                                                        </block>
+                                                      </value>
+                                                      <value name="ADD1">
+                                                        <block type="text" id="H!*HT_A{4mE~VvqblU*Y">
+                                                          <field name="TEXT">ykrutieleningrada3</field>
+                                                        </block>
+                                                      </value>
+                                                    </block>
+                                                  </value>
+                                                  <next>
+                                                    <block type="dictSet" id="^Z16^;W5TZ?T`N)HcbPY">
+                                                      <value name="DICT">
+                                                        <block type="variables_get" id="m9ZR^2amri~KRVm!3c%:">
+                                                          <field name="VAR" id="uQEDsau,9`s^5-%,p(XD">infos</field>
+                                                        </block>
+                                                      </value>
+                                                      <value name="KEY">
+                                                        <shadow type="text" id=":2d{IQWJ2/n%xJus3N(W">
+                                                          <field name="TEXT">scene4</field>
+                                                        </shadow>
+                                                      </value>
+                                                      <value name="VALUE">
+                                                        <block type="lists_create_with" id="Y4#w!S/rTZvru^|Rhjt(">
+                                                          <mutation items="1"/>
+                                                          <value name="ADD0">
+                                                            <block type="text" id="Re~c8/,=0^47i6ZB;Wh;">
+                                                              <field name="TEXT">bitvazaberlin4</field>
+                                                            </block>
+                                                          </value>
+                                                        </block>
+                                                      </value>
+                                                      <next>
+                                                        <block type="dictSet" id="Pgiz}b}1lC%3G[a;JOk0">
+                                                          <value name="DICT">
+                                                            <block type="variables_get" id="8dG2/*%3]|M^QLSyMee0">
+                                                              <field name="VAR" id="uQEDsau,9`s^5-%,p(XD">infos</field>
+                                                            </block>
+                                                          </value>
+                                                          <value name="KEY">
+                                                            <shadow type="text" id=":,J#7a2XedL[-Udty4`H">
+                                                              <field name="TEXT">scene7</field>
+                                                            </shadow>
+                                                          </value>
+                                                          <value name="VALUE">
+                                                            <block type="lists_create_with" id="X8$0HQ2[Bs,3hVW}PsxZ">
+                                                              <mutation items="2"/>
+                                                              <value name="ADD0">
+                                                                <block type="text" id="C.9$D3z[jnq9@h{;HeX?">
+                                                                  <field name="TEXT">vitrinarubega7</field>
+                                                                </block>
+                                                              </value>
+                                                              <value name="ADD1">
+                                                                <block type="text" id="V,{bqJB!dj%;H3or=s~A">
+                                                                  <field name="TEXT">letchiki7</field>
+                                                                </block>
+                                                              </value>
+                                                            </block>
+                                                          </value>
+                                                          <next>
+                                                            <block type="variables_set" id="]99ZsA0ZskA|zoS(Pyok">
+                                                              <field name="VAR" id="%xokwK]JtpimB?Xz7CO%">activeScene</field>
+                                                              <value name="VALUE">
+                                                                <block type="text" id="_9[)jjkP0fzQ}cj^tEZ%">
+                                                                  <field name="TEXT">scene1</field>
+                                                                </block>
+                                                              </value>
+                                                              <next>
+                                                                <block type="variables_set" id="Dl16e{O|PR!Uk-L:)=FR">
+                                                                  <field name="VAR" id="AyPZx9~|e8xuwp3AX4,u">oldScene</field>
+                                                                  <value name="VALUE">
+                                                                    <block type="variables_get" id="u[WgidY`bH6MSw|b4tF(">
+                                                                      <field name="VAR" id="%xokwK]JtpimB?Xz7CO%">activeScene</field>
+                                                                    </block>
+                                                                  </value>
+                                                                  <next>
+                                                                    <block type="procedures_callnoreturn" id="ypi[4jN:M~i3W+%U4o{5">
+                                                                      <mutation name="loadScene">
+                                                                        <arg name="sceneName"/>
+                                                                      </mutation>
+                                                                      <value name="ARG0">
+                                                                        <block type="variables_get" id="1|USq_tmm5Z1ab?$ThC.">
+                                                                          <field name="VAR" id="%xokwK]JtpimB?Xz7CO%">activeScene</field>
+                                                                        </block>
+                                                                      </value>
+                                                                    </block>
+                                                                  </next>
+                                                                </block>
+                                                              </next>
+                                                            </block>
+                                                          </next>
+                                                        </block>
+                                                      </next>
+                                                    </block>
+                                                  </next>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+  </tab>
+  <tab name="functions" type="SecondaryTab" active="true" scrollx="-267.5372598519516" scrolly="-33.55627700025275" scale="1">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="l.4;vLi;@vMk+mxL?HQt" type="">sceneName</variable>
+      <variable id="AyPZx9~|e8xuwp3AX4,u" type="">oldScene</variable>
+      <variable id="@XO}6%BiL|}ZO082GT,?" type="">scenes</variable>
+      <variable id="%xokwK]JtpimB?Xz7CO%" type="">activeScene</variable>
+      <variable id="uQEDsau,9`s^5-%,p(XD" type="">infos</variable>
+      <variable id="lcSC;w*Kw~(*}gbr57Y}" type="">currentVideoName</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="bo/15+Z.!R(ImB5Inh8[" x="50" y="-110">
+      <mutation>
+        <arg name="sceneName" varid="l.4;vLi;@vMk+mxL?HQt"/>
+      </mutation>
+      <field name="NAME">loadScene</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="setHTMLElemStyle" id="I(z|fr-yW,1|Zj)NMK,=">
+          <field name="PROPERTY">display</field>
+          <field name="PARENT">FALSE</field>
+          <value name="VALUE">
+            <block type="text" id="*K(PknoVZME=w6d2Q9AN">
+              <field name="TEXT">flex</field>
+            </block>
+          </value>
+          <value name="ID">
+            <shadow type="text" id="FLx1_Q2$kdT^+!!iC~MW">
+              <field name="TEXT">preloader</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="unloadScene" id=",~7x+48!gB1yERP]rr%f">
+              <value name="URL">
+                <shadow type="text" id=":)#Wys(,q7T6NyI/nJ?,">
+                  <field name="TEXT">path/to/scene.gltf</field>
+                </shadow>
+                <block type="procedures_callreturn" id="Ct@vY=Ojnm#ncM~[O]v7">
+                  <mutation name="getFileName">
+                    <arg name="sceneName"/>
+                  </mutation>
+                  <value name="ARG0">
+                    <block type="variables_get" id="$2Kmn5:0y%:S[)AIOTX%">
+                      <field name="VAR" id="AyPZx9~|e8xuwp3AX4,u">oldScene</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="appendScene" id="qDq8dKMq[-$^!Yu_NnOz">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" enableonprogress="true" enableonerror="false" loadcameras="true" loadlights="false" enablealias="false"></mutation>
+                  <value name="URL">
+                    <shadow type="text" id="+p.Fhu+o+j3b}Uk-.55W">
+                      <field name="TEXT">path/to/scene.gltf</field>
+                    </shadow>
+                    <block type="procedures_callreturn" id="RpoJm37@s5#!u@C7{loc">
+                      <mutation name="getFileName">
+                        <arg name="sceneName"/>
+                      </mutation>
+                      <value name="ARG0">
+                        <block type="variables_get" id="b+mln.H~|11XmoW@-h3u">
+                          <field name="VAR" id="l.4;vLi;@vMk+mxL?HQt">sceneName</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <statement name="DO_PROGRESS">
+                    <block type="setHTMLElemAttribute" id="T$H^!XpDEBzCt0NL[Pj7">
+                      <field name="ATTRIBUTE">innerHTML</field>
+                      <field name="PARENT">FALSE</field>
+                      <value name="VALUE">
+                        <block type="text_join" id="RMl*.n7m+KL[:ilr5|rh">
+                          <mutation items="3"/>
+                          <value name="ADD0">
+                            <block type="text" id="-DB_zYGX.j}jFq#f?*6a">
+                              <field name="TEXT">Пожалуйста, подождите немного...</field>
+                            </block>
+                          </value>
+                          <value name="ADD1">
+                            <block type="percentage2" id="Q3?KAr0p_5_|5xGho_5+"/>
+                          </value>
+                          <value name="ADD2">
+                            <block type="text" id="U*qQ{|%2eWG|yI$3yQ?V">
+                              <field name="TEXT">%</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="ID">
+                        <shadow type="text" id="Whn8U!Q!e,K}NqcL[)IT">
+                          <field name="TEXT">preloader_text</field>
                         </shadow>
                       </value>
                     </block>
                   </statement>
+                  <statement name="DO">
+                    <block type="setHTMLElemStyle" id="e$#]vj9$:)^M#p8EE^ul">
+                      <field name="PROPERTY">display</field>
+                      <field name="PARENT">FALSE</field>
+                      <value name="VALUE">
+                        <block type="text" id="q]0q-G#NQ~BU*[ZP]_fX">
+                          <field name="TEXT">none</field>
+                        </block>
+                      </value>
+                      <value name="ID">
+                        <shadow type="text" id="5jRdxE6nN^^`=;S2sp3i">
+                          <field name="TEXT">preloader</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="setActiveCamera" id="ZFHO2/R[FXJ1w~g8DF41">
+                          <value name="CAMERA">
+                            <shadow type="objectList" id="GB|Q]{^Zwi~H=?|qOn5U">
+                              <field name="FIELDNAME">Camera</field>
+                            </shadow>
+                            <block type="text" id="NO2A^.4.$67N94vlLdka">
+                              <field name="TEXT">Camera</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="whenClicked" id="$6-wE1Ea5{)%q9u%Jq#e">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+                              <field name="X_RAY">FALSE</field>
+                              <field name="DOUBLE_CLICK">FALSE</field>
+                              <field name="LEFT_BUTTON">TRUE</field>
+                              <field name="MIDDLE_BUTTON">TRUE</field>
+                              <field name="RIGHT_BUTTON">TRUE</field>
+                              <value name="VALUE">
+                                <shadow type="objectList">
+                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                </shadow>
+                                <block type="dictGet" id="VCnEdl5Nf4_Lp}J_.fq#">
+                                  <value name="DICT">
+                                    <block type="variables_get" id="g6/_AP3/,@GPU$(_98IM">
+                                      <field name="VAR" id="@XO}6%BiL|}ZO082GT,?">scenes</field>
+                                    </block>
+                                  </value>
+                                  <value name="KEY">
+                                    <shadow type="text">
+                                      <field name="TEXT">scene1</field>
+                                    </shadow>
+                                    <block type="variables_get" id="XGN8mOc@l!wl{QvGKv9u">
+                                      <field name="VAR" id="%xokwK]JtpimB?Xz7CO%">activeScene</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                              <statement name="DO">
+                                <block type="variables_set" id="P[+|W?6~H)vqJ+m9a3$M">
+                                  <field name="VAR" id="AyPZx9~|e8xuwp3AX4,u">oldScene</field>
+                                  <value name="VALUE">
+                                    <block type="variables_get" id="*6SSRXm#npK#S.#0`2:*">
+                                      <field name="VAR" id="%xokwK]JtpimB?Xz7CO%">activeScene</field>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="procedures_callnoreturn" id="D5IM#e%K7UsZ7}%3p}CP">
+                                      <mutation name="loadScene">
+                                        <arg name="sceneName"/>
+                                      </mutation>
+                                      <value name="ARG0">
+                                        <block type="pickedObject" id="o|kHtl@;7f5MAQx*qTFG"/>
+                                      </value>
+                                      <next>
+                                        <block type="variables_set" id="{kVSEGZ7oS]d=*YZz-:e">
+                                          <field name="VAR" id="%xokwK]JtpimB?Xz7CO%">activeScene</field>
+                                          <value name="VALUE">
+                                            <block type="pickedObject" id="H_).tw2qY%y,YktsClk0"/>
+                                          </value>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </statement>
+                              <next>
+                                <block type="whenClicked" id="2EqZvXI~Qs{cA|8?pa1.">
+                                  <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="true"></mutation>
+                                  <field name="X_RAY">FALSE</field>
+                                  <field name="DOUBLE_CLICK">FALSE</field>
+                                  <field name="LEFT_BUTTON">TRUE</field>
+                                  <field name="MIDDLE_BUTTON">TRUE</field>
+                                  <field name="RIGHT_BUTTON">TRUE</field>
+                                  <value name="VALUE">
+                                    <shadow type="objectList" id=")]zIv)|,=vL3Ep4xP:yq">
+                                      <field name="FIELDNAME">&lt;none&gt;</field>
+                                    </shadow>
+                                    <block type="dictGet" id="8#Q:ONHJ!f]f-BMg(^2F">
+                                      <value name="DICT">
+                                        <block type="variables_get" id="FOp#}/%v}~;B(mxjEP%y">
+                                          <field name="VAR" id="uQEDsau,9`s^5-%,p(XD">infos</field>
+                                        </block>
+                                      </value>
+                                      <value name="KEY">
+                                        <shadow type="text">
+                                          <field name="TEXT">scene1</field>
+                                        </shadow>
+                                        <block type="variables_get" id="WeS#VoFi*3]v}w0Lb/^q">
+                                          <field name="VAR" id="%xokwK]JtpimB?Xz7CO%">activeScene</field>
+                                        </block>
+                                      </value>
+                                    </block>
+                                  </value>
+                                  <statement name="DO">
+                                    <block type="hide" id="uAxC]tgPYTSFSpq`_wZi">
+                                      <value name="VALUE">
+                                        <shadow type="objectList" id="C(QIpRuTpeki+i%/U`Ff">
+                                          <field name="FIELDNAME">&lt;none&gt;</field>
+                                        </shadow>
+                                        <block type="dictGet" id="mXTB5?ji0Hz}KaQ1BLs.">
+                                          <value name="DICT">
+                                            <block type="variables_get" id="7{8!]pf3LN5p^(kMO:1f">
+                                              <field name="VAR" id="uQEDsau,9`s^5-%,p(XD">infos</field>
+                                            </block>
+                                          </value>
+                                          <value name="KEY">
+                                            <shadow type="text">
+                                              <field name="TEXT">scene1</field>
+                                            </shadow>
+                                            <block type="variables_get" id="uVNw}oHaNnd6I];^}cV}">
+                                              <field name="VAR" id="%xokwK]JtpimB?Xz7CO%">activeScene</field>
+                                            </block>
+                                          </value>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="show" id="0[,W%,m}xB,ASao|e*iB">
+                                          <value name="VALUE">
+                                            <shadow type="objectList" id="Qo*fH)i?kR8r?Mvp?jtX">
+                                              <field name="FIELDNAME">tv</field>
+                                            </shadow>
+                                            <block type="text" id="5(c,(]+ly;08`b}puRbb">
+                                              <field name="TEXT">tv</field>
+                                            </block>
+                                          </value>
+                                          <next>
+                                            <block type="makeParent" id="DsXu$Y+WeG$+Lwfj_1^K">
+                                              <value name="PARENT_WHAT">
+                                                <shadow type="objectList" id="s*e/D?MeMU/fS%fOBfmI">
+                                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                                </shadow>
+                                                <block type="text" id="{GKH/dCP8DTrfaR`Lz7U">
+                                                  <field name="TEXT">tv</field>
+                                                </block>
+                                              </value>
+                                              <value name="PARENT_TO">
+                                                <shadow type="objectList" id="o3eAGgx$qnoUiDiR9m-O">
+                                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                                </shadow>
+                                                <block type="text" id="7r5zHhUB{.PW8kUqG1yf">
+                                                  <field name="TEXT">Camera</field>
+                                                </block>
+                                              </value>
+                                              <next>
+                                                <block type="replaceTexture" id="wW)oZqG=_N{v!KXxb=,:">
+                                                  <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="true" flextexinput="false"></mutation>
+                                                  <field name="OLD_TEX_NAME">video_screen.jpg</field>
+                                                  <value name="MATERIAL">
+                                                    <shadow type="materialList" id="^56LCAT*qUQE8o.j29T.">
+                                                      <field name="FIELDNAME">tv_video</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="NEW_TEX_URL">
+                                                    <shadow type="text" id=";t.w}2V#%KbE:XO{rVXy">
+                                                      <field name="TEXT">./newTexture.png</field>
+                                                    </shadow>
+                                                    <block type="procedures_callreturn" id="lzGE0$aUphgVxgFXK%-s">
+                                                      <mutation name="getVideoName">
+                                                        <arg name="sceneName"/>
+                                                      </mutation>
+                                                      <value name="ARG0">
+                                                        <block type="pickedObject" id="dWs7P_*qN,/,_3vq2(VQ"/>
+                                                      </value>
+                                                    </block>
+                                                  </value>
+                                                  <statement name="DO">
+                                                    <block type="playSound" id="Xf=[$Rz0[b.fk,g~=I_3">
+                                                      <field name="LOOP">FALSE</field>
+                                                      <value name="VALUE">
+                                                        <block type="procedures_callreturn" id="Ehw91t]/[7jH?ZSYUW/~">
+                                                          <mutation name="getVideoName">
+                                                            <arg name="sceneName"/>
+                                                          </mutation>
+                                                          <value name="ARG0">
+                                                            <block type="pickedObject" id="1Sc?9Oct-Zy-Fux^0P+1"/>
+                                                          </value>
+                                                        </block>
+                                                      </value>
+                                                    </block>
+                                                  </statement>
+                                                  <next>
+                                                    <block type="variables_set" id="wl},8q:j6,3zjGLW7yG1">
+                                                      <field name="VAR" id="lcSC;w*Kw~(*}gbr57Y}">currentVideoName</field>
+                                                      <value name="VALUE">
+                                                        <block type="pickedObject" id="5HGSq~.VNODgFAhHS/:)"/>
+                                                      </value>
+                                                    </block>
+                                                  </next>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </statement>
+                                  <statement name="IF_MISSED_DO">
+                                    <block type="stopSound" id="pVqqxFi8=5e#sY}Qlo5t">
+                                      <value name="VALUE">
+                                        <block type="procedures_callreturn" id=";P]wC):fQ{Sjz!V]Gx.0">
+                                          <mutation name="getVideoName">
+                                            <arg name="sceneName"/>
+                                          </mutation>
+                                          <value name="ARG0">
+                                            <block type="variables_get" id="zau;moW_uQzdLDZ;z.{=">
+                                              <field name="VAR" id="lcSC;w*Kw~(*}gbr57Y}">currentVideoName</field>
+                                            </block>
+                                          </value>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="hide" id="0FS8E8i6aCkI[UN)UGiu">
+                                          <value name="VALUE">
+                                            <shadow type="objectList" id="s.LS)c}7^LGS`Z)MVL#]">
+                                              <field name="FIELDNAME">&lt;none&gt;</field>
+                                            </shadow>
+                                            <block type="text" id="IzSPTOF}zEZ~M@mz37Xk">
+                                              <field name="TEXT">tv</field>
+                                            </block>
+                                          </value>
+                                          <next>
+                                            <block type="show" id="y%!I^D(WB`?~pALA.N`V">
+                                              <value name="VALUE">
+                                                <shadow type="objectList" id="9=`I5e.[%eX`hzb3vm`c">
+                                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                                </shadow>
+                                                <block type="dictGet" id="Wy+;l5?:?i9[S0n3:|(d">
+                                                  <value name="DICT">
+                                                    <block type="variables_get" id="8V=MYQ)?UEW~e`./h}Nc">
+                                                      <field name="VAR" id="uQEDsau,9`s^5-%,p(XD">infos</field>
+                                                    </block>
+                                                  </value>
+                                                  <value name="KEY">
+                                                    <shadow type="text">
+                                                      <field name="TEXT">scene1</field>
+                                                    </shadow>
+                                                    <block type="variables_get" id="iOBV{0!7IL4bN)R/.RHH">
+                                                      <field name="VAR" id="%xokwK]JtpimB?Xz7CO%">activeScene</field>
+                                                    </block>
+                                                  </value>
+                                                </block>
+                                              </value>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </statement>
+                                  <next>
+                                    <block type="whenHovered" id="W_Ce8Xpo:V2BQ{ea;0AB">
+                                      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+                                      <field name="X_RAY">FALSE</field>
+                                      <value name="VALUE">
+                                        <shadow type="objectList" id="BvQnNs]o~-9is=*S|JY5">
+                                          <field name="FIELDNAME">&lt;none&gt;</field>
+                                        </shadow>
+                                        <block type="dictGet" id="u(3=@81raEX:wCntk2x;">
+                                          <value name="DICT">
+                                            <block type="variables_get" id="S59n$SJJE1]HD8,e-}:l">
+                                              <field name="VAR" id="@XO}6%BiL|}ZO082GT,?">scenes</field>
+                                            </block>
+                                          </value>
+                                          <value name="KEY">
+                                            <shadow type="text">
+                                              <field name="TEXT">scene1</field>
+                                            </shadow>
+                                            <block type="variables_get" id="|cLyBm}OmeRa1o7][M(/">
+                                              <field name="VAR" id="%xokwK]JtpimB?Xz7CO%">activeScene</field>
+                                            </block>
+                                          </value>
+                                        </block>
+                                      </value>
+                                      <statement name="DO_OVER">
+                                        <block type="outline" id="s:]3e=F#[CC`6O]xa=V-">
+                                          <field name="DO_WHAT">ENABLE</field>
+                                          <value name="TARGET">
+                                            <shadow type="objectList" id="kWGYl+1VZw?+7Q?gW_d~">
+                                              <field name="FIELDNAME">&lt;none&gt;</field>
+                                            </shadow>
+                                            <block type="hoveredObject" id="y((=~:-BohTcw_VgW@RW"/>
+                                          </value>
+                                        </block>
+                                      </statement>
+                                      <statement name="DO_OUT">
+                                        <block type="outline" id="q~Ikad$Slix-g#Tqq;c2">
+                                          <field name="DO_WHAT">DISABLE</field>
+                                          <value name="TARGET">
+                                            <shadow type="objectList" id="Qi]h0#%!hjby^SZAv7}g">
+                                              <field name="FIELDNAME">&lt;none&gt;</field>
+                                            </shadow>
+                                            <block type="hoveredObject" id="kO2TE.:3FS|Xq,ooxRN$"/>
+                                          </value>
+                                        </block>
+                                      </statement>
+                                      <next>
+                                        <block type="whenHovered" id="n[nx{()h2:e[/JN!*d?~">
+                                          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+                                          <field name="X_RAY">FALSE</field>
+                                          <value name="VALUE">
+                                            <shadow type="objectList">
+                                              <field name="FIELDNAME">&lt;none&gt;</field>
+                                            </shadow>
+                                            <block type="dictGet" id="6e`.ID:x0+C%?)u(hwRI">
+                                              <value name="DICT">
+                                                <block type="variables_get" id="nCet2iMWS6cuHQ!LHC2I">
+                                                  <field name="VAR" id="uQEDsau,9`s^5-%,p(XD">infos</field>
+                                                </block>
+                                              </value>
+                                              <value name="KEY">
+                                                <shadow type="text">
+                                                  <field name="TEXT">scene1</field>
+                                                </shadow>
+                                                <block type="variables_get" id="AMbB]}diB[A5AS!-9%@m">
+                                                  <field name="VAR" id="%xokwK]JtpimB?Xz7CO%">activeScene</field>
+                                                </block>
+                                              </value>
+                                            </block>
+                                          </value>
+                                          <statement name="DO_OVER">
+                                            <block type="outline" id="0E!g6N86^o)i3dVW#9+f">
+                                              <field name="DO_WHAT">ENABLE</field>
+                                              <value name="TARGET">
+                                                <shadow type="objectList">
+                                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                                </shadow>
+                                                <block type="hoveredObject" id="tLPUZ+nBvkWt;MpjnCB$"/>
+                                              </value>
+                                            </block>
+                                          </statement>
+                                          <statement name="DO_OUT">
+                                            <block type="outline" id="uh|i}R|uDqc3d{qS1^qZ">
+                                              <field name="DO_WHAT">DISABLE</field>
+                                              <value name="TARGET">
+                                                <shadow type="objectList">
+                                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                                </shadow>
+                                                <block type="hoveredObject" id="~;Xz$rnc3lL~G`Q)-TNL"/>
+                                              </value>
+                                            </block>
+                                          </statement>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
                 </block>
-              </statement>
+              </next>
             </block>
-          </statement>
+          </next>
         </block>
       </statement>
     </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defreturn" id=".Zg/t[I-Nryfr^[75B{u" x="1190" y="510">
+      <mutation statements="false">
+        <arg name="sceneName" varid="l.4;vLi;@vMk+mxL?HQt"/>
+      </mutation>
+      <field name="NAME">getVideoName</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <value name="RETURN">
+        <block type="loadVideo" id="@[@FN,L%lZzGH%};vW3!">
+          <value name="URL">
+            <shadow type="text" id="L~)oDOgfXwnR)bo2]g/o">
+              <field name="TEXT">./myVideo.mp4</field>
+            </shadow>
+            <block type="text_join" id="/4BC;4fljW%HE0|?c,49">
+              <mutation items="3"/>
+              <value name="ADD0">
+                <block type="text" id="HrFIpqj1_B{.)aQmZzpI">
+                  <field name="TEXT">./assets/</field>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="variables_get" id="$[t)DLMGGT.dU)^aIru8">
+                  <field name="VAR" id="l.4;vLi;@vMk+mxL?HQt">sceneName</field>
+                </block>
+              </value>
+              <value name="ADD2">
+                <block type="text" id="0~i4s2J;ozFDzLMn!M~M">
+                  <field name="TEXT">.mp4</field>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defreturn" id="[^)Jc#tQ.+a.5ov16l;F" x="1110" y="750">
+      <mutation statements="false">
+        <arg name="sceneName" varid="l.4;vLi;@vMk+mxL?HQt"/>
+      </mutation>
+      <field name="NAME">getFileName</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <value name="RETURN">
+        <block type="text_join" id="h0oc-.Y6cFIt}WWWpYcW">
+          <mutation items="3"/>
+          <value name="ADD0">
+            <block type="text" id="Ah2q%kwF*gj!*IU2p)T^">
+              <field name="TEXT">./assets/</field>
+            </block>
+          </value>
+          <value name="ADD1">
+            <block type="variables_get" id="W]B?%A,!M}lDn[CF8N!!">
+              <field name="VAR" id="l.4;vLi;@vMk+mxL?HQt">sceneName</field>
+            </block>
+          </value>
+          <value name="ADD2">
+            <block type="text" id="YWvM:]%P@Jr]PYQtN;8Z">
+              <field name="TEXT">.gltf</field>
+            </block>
+          </value>
+        </block>
+      </value>
+    </block>
   </tab>
-  <editorsettings viewport-x="1261.8" viewport-y="28" viewport-w="853.2" viewport-h="538" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+  <editorsettings viewport-x="1047.8001220703125" viewport-y="32.80002212524414" viewport-w="459.2" viewport-h="296.4" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
 </xml>

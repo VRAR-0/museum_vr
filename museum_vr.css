@@ -35,3 +35,4 @@ body {
 
 /* removes tap blinking on ios devices */
 * { -webkit-tap-highlight-color:rgba(0,0,0,0); }
+
